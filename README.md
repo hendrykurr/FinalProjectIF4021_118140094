@@ -1,7 +1,12 @@
 # FinalProjectIF4021_118140094
 ## Filter Suap-Suap
 
-Hendry Kurniawan  118140094  hendrykurr
+Nama    : Hendry Kurniawan  
+NIM     : 118140094
+Github  : hendrykurr
+Matkul  : Sistem Informasi Multimedia
+Kode    : IF4021
+Pengampu: Martin Clinton Tosima Manullang, S.T., M.T.
 
 ### Deskripsi
 Filter ini adalah aplikasi real-time yang menambahkan efek gambar katak ke wajah pengguna dengan menggunakan teknologi MediaPipe dan OpenCV. Menggunakan deteksi wajah, gambar katak disesuaikan dengan posisi dan pembukaan mulut pengguna, menciptakan efek interaktif. Dengan transparansi gambar dan ukuran yang menyesuaikan ekspresi wajah, aplikasi ini menawarkan pengalaman filter wajah yang halus dan personal. Proyek ini cocok untuk hiburan, media sosial, dan eksperimen kreatif, serta dapat dengan mudah dikembangkan untuk efek wajah lainnya.
@@ -10,59 +15,70 @@ Filter ini adalah aplikasi real-time yang menambahkan efek gambar katak ke wajah
 #### **1. Persyaratan Sistem**
 
 Pastikan Anda memiliki perangkat dengan sistem operasi Windows, macOS, atau Linux, serta kamera untuk menangkap gambar real-time.
+Pastika juga Anda memiliki Anaconda atau Miniconda untuk mengelola environment dan pustaka Python. Jika belum memilikinya, Anda bisa mendownload Miniconda pada link berikut : https://docs.conda.io/en/latest/miniconda.html.
 
-#### **2. Instalasi Paket yang Dibutuhkan**
+#### **2. Download Project**
 
-Program ini menggunakan beberapa pustaka Python yang perlu diinstal terlebih dahulu. Ikuti langkah-langkah berikut untuk menginstalnya:
+Sebelum lanjut ke tahap berikutnya, Anda perlu mendownload seluruh file project ini, dan tempatkan pada satu folder terpisah.
 
-a. Install Python
+#### **3. Membuat Environment untuk Program**
 
-Pastikan Anda sudah menginstal Python (versi yang digunakan dalam pengembanga filter ini adalan 3.12.4). Jika belum, Anda bisa mengunduhnya dari situs resmi Python.
+Setelah Miniconda terinstal, Anda dapat membuat lingkungan (environment) Python yang terisolasi untuk menjalankan program ini.
 
-b. Install Pustaka yang Dibutuhkan
+1. Buka Command Prompt atau Terminal
+Di Windows, buka Anaconda Prompt atau Command Prompt.
+Di macOS/Linux, buka Terminal.
 
-Buka terminal atau command prompt dan jalankan perintah berikut untuk menginstal pustaka yang diperlukan:
+2. Buat Environment Baru dengan Miniconda
+Di terminal atau command prompt, arahkan direktori yang aktif ke folder tempata Anda menyimpan file yang Anda downliad dari repository ini.
+Kemudian jalankan perintah berikut untuk membuat environment baru:
+
+**conda create --name filter_suapsuap python=3.12.4**
+
+**filter_suapsuap** adalah nama environment yang Anda buat, Anda dapat mengganti namanya jika diinginkan. **python=3.12.4** memastikan Anda menggunakan versi Python 3.12.4.
+
+Setelah selesai, aktifkan environment baru ini dengan perintah:
+
+**conda activate filter_suapsuap**
+
+#### **4. Install Pustaka yang Dibutuhkan**
+
+Setelah environment Python 3.12.4 aktif, Anda perlu menginstal pustaka yang dibutuhkan.
+Pada terminal atau command prompt, jalankan perintah berikut untuk menginstal pustaka yang diperlukan:
 
 **pip install mediapipe opencv-python numpy**
 
 Pustaka yang diinstal:
 
-mediapipe: Untuk mendeteksi wajah dan landmark wajah.
-opencv-python: Untuk menangani pengolahan gambar dan video.
-numpy: Untuk manipulasi array dan gambar.
+- mediapipe: Untuk mendeteksi wajah dan landmark wajah.
+- opencv-python: Untuk menangani pengolahan gambar dan video.
+- numpy: Untuk manipulasi array dan gambar.
 
-#### **3. Mempersiapkan Gambar Katak**
+Jika ada masalah saat menginstal beberapa pustaka, Anda bisa mencoba menginstalnya menggunakan conda:
 
-Siapkan gambar katak yang memiliki saluran alpha (transparansi). Pastikan gambar tersebut berformat PNG.
-Gambar katak dapat diunduh pada folder data, dengan nama katak.png
-Buat folder data, lalu simpan gambar katak didalamnya
+**conda install mediapipe opencv**
 
-#### **4. Menjalankan Program**
+#### **5. Menjalankan Program Menggunakan Jupyter Notebook**
 
-Setelah semua pustaka diinstal dan gambar hewan disiapkan, Anda dapat menjalankan program dengan langkah berikut:
+Setelah menginstal semua pustaka yang diperlukan, jalankan Jupyter Notebook dengan perintah:
 
-a. Menyiapkan Kode Program
+**jupyter notebook**
 
-Salin seluruh kode program yang ada pada file main.ipynb ke dalam sebuah file Python, misalnya filter_suap.py.
+Perintah ini akan membuka Jupyter Notebook pada browswer Anda.
 
-b. Menjalankan Program
+Jupyter Notebook akan otomatis membuka folder tempat Anda menyimpan file project ini.
+Buka file **main.ipynb** lalu tekan  **Shift + Enter** pada setiap sel untuk menjalankan program secara berurutan.
 
-Buka terminal atau command prompt, arahkan ke folder tempat file Python disimpan, dan jalankan perintah berikut:
-
-**python filter_suap.py**
-
-Program akan membuka jendela kamera dan menampilkan efek gambar hewan yang mengikuti pergerakan mulut Anda.
-
-#### **5. Menggunakan Program**
+#### **6. Menggunakan Program**
 
 Filter Wajah: Saat program berjalan, Anda akan melihat gambar katak yang muncul di area mulut Anda dalam jendela kamera.
 
 Keluar dari Program: Untuk keluar dari program, tekan tombol ESC pada keyboard. Program akan berhenti dan menutup jendela kamera.
 
-#### **6. Troubleshooting**
+#### **7. Troubleshooting**
 
 Jika kamera tidak terdeteksi, pastikan perangkat kamera Anda terhubung dengan baik dan aktif.
 
 Jika program tidak berjalan, pastikan semua pustaka telah terinstal dengan benar.
 
-Dengan mengikuti instruksi ini, Anda akan dapat menjalankan program filter wajah dengan gambar hewan secara mudah dan menyenangkan!
+Jika mediapipe tidak dapat diinstal atau tidak berjalan dengan benar, coba turunkan versi Python ke 3.10 atau 3.11, karena mediapipe kadang-kadang memerlukan versi Python yang lebih stabil dan lebih lama.
