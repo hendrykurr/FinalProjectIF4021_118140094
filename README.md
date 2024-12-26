@@ -2,11 +2,11 @@
 ## Filter Suap-Suap
 
 Nama    : Hendry Kurniawan  
-NIM     : 118140094
-Github  : hendrykurr
-Matkul  : Sistem Informasi Multimedia
-Kode    : IF4021
-Pengampu: Martin Clinton Tosima Manullang, S.T., M.T.
+NIM     : 118140094  
+Github  : hendrykurr  
+Matkul  : Sistem Informasi Multimedia  
+Kode    : IF4021  
+Pengampu: Martin Clinton Tosima Manullang, S.T., M.T.  
 
 ### Deskripsi
 Filter ini adalah aplikasi real-time yang menambahkan efek gambar katak ke wajah pengguna dengan menggunakan teknologi MediaPipe dan OpenCV. Menggunakan deteksi wajah, gambar katak disesuaikan dengan posisi dan pembukaan mulut pengguna, menciptakan efek interaktif. Dengan transparansi gambar dan ukuran yang menyesuaikan ekspresi wajah, aplikasi ini menawarkan pengalaman filter wajah yang halus dan personal. Proyek ini cocok untuk hiburan, media sosial, dan eksperimen kreatif, serta dapat dengan mudah dikembangkan untuk efek wajah lainnya.
@@ -25,11 +25,11 @@ Sebelum lanjut ke tahap berikutnya, Anda perlu mendownload seluruh file project 
 
 Setelah Miniconda terinstal, Anda dapat membuat lingkungan (environment) Python yang terisolasi untuk menjalankan program ini.
 
-1. Buka Command Prompt atau Terminal
+1. Buka Command Prompt atau Terminal  
 Di Windows, buka Anaconda Prompt atau Command Prompt.
 Di macOS/Linux, buka Terminal.
 
-2. Buat Environment Baru dengan Miniconda
+2. Buat Environment Baru dengan Miniconda  
 Di terminal atau command prompt, arahkan direktori yang aktif ke folder tempata Anda menyimpan file yang Anda downliad dari repository ini.
 Kemudian jalankan perintah berikut untuk membuat environment baru:
 
